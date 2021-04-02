@@ -36,11 +36,11 @@ jobs:
         run: mvn -B clean verify -Psonar -Dsonar.login=${{ secrets.SONAR_TOKEN }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
+
   artifact:
     name: Publish - GitHub Packages
     runs-on: ubuntu-20.04
-    needs: [test, sonar]
+    needs: [ test, sonar ]
 
     steps:
       - uses: actions/checkout@v1
@@ -57,7 +57,7 @@ jobs:
   docker:
     name: Publish - Docker Hub
     runs-on: ubuntu-20.04
-    needs: [test, sonar]
+    needs: [ test, sonar ]
     env:
       REPO: ${{ secrets.DOCKER_REPO }}
 
