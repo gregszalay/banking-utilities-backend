@@ -61,6 +61,7 @@
 
     <distributionManagement>
         <repository>
+            <uniqueVersion>false</uniqueVersion>
             <id>github</id>
             <name>Banking Utilities Backend</name>
             <url>https://maven.pkg.github.com/gregszalay/banking-utilities-backend</url>
