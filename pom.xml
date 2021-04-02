@@ -6,13 +6,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>hu.gergelyszalay</groupId>
-    <artifactId>BankingUtilities</artifactId>
+    <artifactId>banking-utilities-backend</artifactId>
     <packaging>pom</packaging>
     <version>1.1</version>
     <modules>
-        <module>ApplicationCore</module>
-        <module>ConsoleUI</module>
-        <module>Webservice</module>
+        <module>application-core</module>
+        <module>console-ui</module>
+        <module>webservice</module>
     </modules>
 
     <properties>
