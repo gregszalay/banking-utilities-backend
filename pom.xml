@@ -63,7 +63,7 @@
         <repository>
             <id>github</id>
             <name>Banking Utilities Backend</name>
-            <url>https://maven.pkg.github.com/gregszalay/banking-utilities-backend</url>
+            <url>https://maven.pkg.github.com/gregszalay/*</url>
         </repository>
     </distributionManagement>
 
