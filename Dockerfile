@@ -1,13 +1,13 @@
 #RUN WAR WITH JETTY MAVEN PLUGIN
 FROM maven:3.6.3-adoptopenjdk-8
 COPY application-core/src/ banking-utilities-backend/application-core/src/
-COPY application-core/target/ banking-utilities-backend/application-core/target/
+#COPY application-core/target/ banking-utilities-backend/application-core/target/
 COPY application-core/pom.xml banking-utilities-backend/application-core/pom.xml
 COPY console-ui/src/ banking-utilities-backend/console-ui/src/
-COPY console-ui/target/ banking-utilities-backend/console-ui/target/
+#COPY console-ui/target/ banking-utilities-backend/console-ui/target/
 COPY console-ui/pom.xml banking-utilities-backend/console-ui/pom.xml
 COPY webservice/src/ banking-utilities-backend/webservice/src/
-COPY webservice/target/ banking-utilities-backend/webservice/target/
+#COPY webservice/target/ banking-utilities-backend/webservice/target/
 COPY webservice/pom.xml banking-utilities-backend/webservice/pom.xml
 COPY pom.xml banking-utilities-backend/pom.xml
 RUN mvn -f banking-utilities-backend/ clean install
