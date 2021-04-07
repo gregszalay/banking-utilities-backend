@@ -16,20 +16,25 @@ In order to run this container you'll need docker installed.
 
 Steps to build a Docker image:
 
-1. Clone this repo
+1. Clone this repo 
+   
+         git clone git@github.com:gregszalay/banking-utilities-backend.git
 
-        git clone git@github.com:gregszalay/BankingUtilities.git
+2. Navigate to source folder 
+   
+         cd banking-utilities-backend
 
-2. Build the image
-
-        docker build -t bankingutilities-webapp .
+3. Build the image 
+   
+         docker build -t bankingutilities-webapp .
 
    This could take a few minutes.
 
-3. Run the image's default command, which should start everything up. The `-p` option forwards the container's port 8080
-   to port 8080 on the host.
 
-        docker run -p 8080:8080 bankingutilities-webapp
+4. Run the image's default command, which should start everything up. The `-p` option forwards the container's port 8080
+   to port 8080 on the host. 
+   
+         docker run -p 8080:8080 bankingutilities-webapp
 
-4. Once everything has started up, you should be able to access the webapp via [http://localhost:8000/] on your host
+5. Once everything has started up, you should be able to access the webapp via [http://localhost:8000/] on your host
    machine. Open: http://localhost:8080/ in your favourite browser.
