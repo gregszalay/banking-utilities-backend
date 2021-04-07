@@ -19,8 +19,12 @@ Steps to build a Docker image:
 1. Clone this repo 
    
          git clone git@github.com:gregszalay/banking-utilities-backend.git
+         
+2. Navigate to source folder 
 
-2. Build the image 
+         cd banking-utilities-backend
+
+3. Build the image 
    
          docker build -t bankingutilities-webapp .
 

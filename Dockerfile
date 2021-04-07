@@ -11,7 +11,7 @@ COPY webservice/src/ banking-utilities-backend/webservice/src/
 COPY webservice/pom.xml banking-utilities-backend/webservice/pom.xml
 COPY pom.xml banking-utilities-backend/pom.xml
 RUN mvn -f banking-utilities-backend/ clean install
-CMD mvn -f banking-utilities-backend/Webservice clean install jetty:run-war
+CMD mvn -f banking-utilities-backend/webservice clean install jetty:run-war
 
 #DEPLOY WAR ON TOMCAT SERVER (experimental)
 #FROM tomcat:8.0-jre8
